@@ -1,0 +1,248 @@
+/* =================================
+  BASE ELEMENT STYLES
+==================================== */
+
+/* FONTS:
+------------------*/
+@font-face {
+	font-family: 'WhitneyHTF-Light';
+	font-weight: 300;
+	src: url('./fonts/WhitneyHTF-Light.otf') format("opentype");
+}
+
+@font-face {
+	font-family: 'WhitneyHTF-SemiBold';
+	font-weight: 300;
+	src: url('./fonts/WhitneyHTF-SemiBold.otf') format("opentype");
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: url(./img/bg-gradient-robert-mathews-168904.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	font-family: 'WhitneyHTF-SemiBold', Helvetica, Arial, sans-serif;
+}
+
+.muted-gray {
+	color: #B9B9B9;
+}
+
+.text-gray {
+	color: #555;
+}
+
+.light-gray {
+	color: #888888;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-green {
+	color: #41c299;
+}
+
+.marketing h1 {
+	font-family: 'WhitneyHTF-Light';
+	color: #fff;
+	opacity: 0.8;
+}
+
+.copy-row {
+	margin-bottom: 45px;
+}
+
+.graph-row {
+	margin-bottom: 40px;
+}
+
+/* CUSTOM BUTTONS:
+------------------*/
+.pt-btn {
+	width: 127px;
+	height: 45px;
+}
+
+.btn-green {
+	background-color: #41c299;
+	color: #fff;
+	border-color: #41c299;
+}
+
+.btn-green:hover {
+	background-color: #00ba9b;
+	color: #fff;
+	border-color: #00ba9b;
+}
+
+.btn-green:focus {
+	background-color: #00ba9b;
+	color: #fff;
+	border-color: #00ba9b;
+}
+
+.btn-purple {
+	background-color: #904bde;
+	color: #fff;
+	border-color: #904bde;
+}
+
+.btn-purple:active {
+	background-color: #9c27b0;
+	color: #fff;
+	border-color: #9c27b0;
+}
+
+.btn-purple:hover {
+	background-color: #9933cc;
+	color: #fff;
+	border-color: #9933cc;
+}
+
+.btn-purple:focus {
+	background-color: #9c27b0;
+	color: #fff;
+	border-color: #9c27b0;
+}
+
+
+/* LAYOUT:
+------------------*/
+.center-me {
+	position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/* BOOTSTRAP OVERRIDES:
+------------------*/
+.panel {
+	border: none;
+}
+
+.input-group-addon {
+	padding: 6px 23px;
+}
+
+.input-group-addon img {
+	position: absolute;
+  top: 14px;
+  left: 17px;
+}
+
+.input-group-addon,
+.form-control {
+	border-radius: 2px;
+	border-color: #ebebeb;
+	box-shadow: none;
+}
+
+.form-control {
+	height: 45px;
+}
+
+
+.form-control::placeholder {
+	color: #B9B9B9;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+/* Mobile ----*/
+@media screen and (max-width: 567px) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		background-image: linear-gradient(
+			#904BDE, #41c299
+			);
+		background-repeat: no-repeat;
+	}
+
+	.panel {
+		width: 240px;
+		height: 350px;
+	}
+
+	.logo {
+		margin: 30px 0 45px;
+	}
+
+	.form-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.pt-btn {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+	.logo {
+		margin: 4px 0 20px;
+	}
+
+	.form-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.pt-btn {
+		width: 100%;
+	}
+}
+
+/* Tablet to Desktop screens ----*/
+@media screen and (min-width: 768px) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		background: url(./img/bg-gradient-robert-mathews-168904.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.tablet-to-desktop {
+		margin-top: 75px;
+	}
+
+	.marketing .row {
+		margin-top: 30px;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.panel-body {
+		height: 600px;
+	}
+	.logo {
+		margin: 117px 0 70px;
+	}
+
+	.form-wrapper {
+		margin-bottom: 35px;
+	}
+
+	.sign-in-row {
+		margin-top: 60px;
+	}
+}
