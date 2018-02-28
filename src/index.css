@@ -21,16 +21,13 @@ html {
 }
 
 body {
+	margin: 0;
+  padding: 0;
+	font-family: 'WhitneyHTF-SemiBold', Helvetica, Arial, sans-serif;
 	background: url(./img/bg-gradient-robert-mathews-168904.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-	font-family: 'WhitneyHTF-SemiBold', Helvetica, Arial, sans-serif;
 }
 
 .muted-gray {
